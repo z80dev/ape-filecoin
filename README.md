@@ -1,6 +1,6 @@
 # Quick Start
 
-TODO: Description
+Ape plugin for [Filecoin EVM](https://docs.filecoin.io/developers/smart-contracts/concepts/filecoin-evm/)
 
 ## Dependencies
 
@@ -13,7 +13,7 @@ TODO: Description
 You can install the latest release via [`pip`](https://pypi.org/project/pip/):
 
 ```bash
-pip install <PYPI_NAME>
+pip install ape-filecoin
 ```
 
 ### via `setuptools`
@@ -22,13 +22,29 @@ You can clone the repository and use [`setuptools`](https://github.com/pypa/setu
 
 ```bash
 git clone https://github.com/ApeWorX/<PYPI_NAME>.git
-cd <PYPI_NAME>
+cd ape-filecoin
 python3 setup.py install
 ```
 
 ## Quick Usage
 
-TODO: Describe library overview in code
+Installing this plugin adds support for the Filecoin EVM ecosystem
+
+In your `ape-config.yaml`:
+
+
+``` yaml
+geth:
+  filecoin:
+    hyperspace-testnet:
+      uri: https://filecoin-hyperspace.chainstacklabs.com/rpc/v1 # rpc endpoint from chainlist.org
+```
+
+Then, in your terminal:
+
+```bash
+ape console --network filecoin:hyperspace-testnet
+```
 
 ## Development
 
