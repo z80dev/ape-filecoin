@@ -44,10 +44,9 @@ extras_require["dev"] = (
 with open("./README.md") as readme:
     long_description = readme.read()
 
-
 setup(
     name="ape-filecoin",
-    use_scm_version=True,
+    use_scm_version={"local_scheme": "no-local-version"},
     setup_requires=["setuptools_scm"],
     description="""ape-filecoin: Ape Ecosystem Plugin for Filecoin""",
     long_description=long_description,
