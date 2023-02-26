@@ -46,8 +46,7 @@ with open("./README.md") as readme:
 
 setup(
     name="ape-filecoin",
-    use_scm_version={"local_scheme": "no-local-version"},
-    setup_requires=["setuptools_scm"],
+    version="0.1.1",
     description="""ape-filecoin: Ape Ecosystem Plugin for Filecoin""",
     long_description=long_description,
     long_description_content_type="text/markdown",
